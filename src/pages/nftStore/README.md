@@ -34,7 +34,8 @@ box-sizing: border-box;<br>
 font-family: 'Roboto', sans-serif;<br>
 
 #### <b>Imagens</b>
-</br>
-Store![./nftstore.png](nftstore.png)
+
+NFT Store![./card-nft.png](nftstore.png)
+
 
 Card NFT![./card-nft.png](card-nft.png)
