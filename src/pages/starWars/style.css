@@ -1,0 +1,50 @@
+.sw {
+    display: grid;
+    grid-template-rows: 90px 1fr;
+    background-color: #000;
+    color: #f0f0f0;
+    max-width: 100vw;
+    height: 100%;
+    padding: 20px;
+    
+}
+
+.sw-header img {
+    width: 120px;
+}
+
+.sw-search h4 {
+    font-size: 26px;
+    line-height: 1;   
+    letter-spacing: 0.75px; 
+}
+
+h4 > span {
+    color: rgb(254, 212, 46);
+}
+
+.sw-search input {
+    width: 32rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(245, 245, 245);
+    padding: 0px 1rem;
+    outline: none;
+    transition: all 0.3s ease-in 0s;
+    background-color: rgb(245, 245, 245);
+    letter-spacing: 0.25px;
+    font-size: 14px;
+}
+
+.sw-lista {
+    display: flex;
+    flex-direction: row;    
+    padding: 0 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+
+.sw-lista > *{
+    padding: 20px;
+}
