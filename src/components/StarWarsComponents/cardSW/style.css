@@ -1,0 +1,46 @@
+.sw-card {
+    position: relative;
+    display: inline-block;
+    width: 320px;
+    margin: 20px;
+    color: #f0f0f0;
+}
+
+.sw-card-content {
+    position: relative;
+    width: 100%;
+    height: calc(320px * 1.34);
+    color: #fff;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.sw-action {
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+    font-size: 16px;
+    color: inherit;
+}
+
+.sw-action span {
+    margin-left: 10px;
+}
+
+.sw-card-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sw-card-footer {
+    padding: 20px 0;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
