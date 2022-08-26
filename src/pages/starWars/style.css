@@ -48,3 +48,23 @@ h4 > span {
 .sw-lista > *{
     padding: 20px;
 }
+
+.tipo-personagem {
+    position: absolute;
+    left: 580px;
+    top: 40px;    
+}
+
+.tipo-personagem button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin: 0 20px;
+}
+
+.btn-active {
+    font-weight: 600;
+    color: rgb(254, 212, 46) !important;
+}

@@ -1,3 +1,4 @@
+import '../../App.css'
 // Importo a classe de estilos
 import './style.css';
 // Faço a importação do Card dos personagens
@@ -45,6 +46,8 @@ export default function StarWars() {
         }
     ]
 
+    const [tipo, setTipo] = useState('');
+
     // Declaro um useState para receber de inicio a lista de personagens, 
     // este useState será utilizado depois para filtrar por nome dos personagens.
     // o método setFiltro receberá a resposta do filtro aplicado em personagens.
@@ -58,10 +61,15 @@ export default function StarWars() {
     useEffect(() => {
         setFiltro(
             // É aplicado um filter para retornar os dados condizentes e utilizo toLocaleLowerCase para garantir os dois nomes em minusculo.
-            // o indexOf retorna -1 caso o termo não esteja presente no nome do personagem.
-            personagens.filter(item => (item.nome.toLocaleLowerCase()).indexOf(termo.toLocaleLowerCase()) !== -1)
+            // o indexOf retorna -1 caso o termo não esteja presente no nome do personagem.            
+            personagens.filter(item => {
+                if (
+                    (item.nome.toLocaleLowerCase()).indexOf(termo.toLocaleLowerCase()) !== -1 && item.tipo.indexOf(tipo) !== -1) {
+                    return item;
+                }
+            })
         )
-    }, [termo])
+    }, [termo, tipo])
 
     return (
         <div className="sw">
@@ -72,6 +80,11 @@ export default function StarWars() {
                 <div className='sw-search'>
                     <h4>Buscador - <span>Star Wars</span></h4>
                     <input value={termo} onChange={(e) => setTermo(e.target.value)} placeholder='Digite o nome do personagem a ser buscado...'></input>
+                    <div className='tipo-personagem'>
+                        {/* Aplico uma classe dinamica para atualizar a cor do botão. */}
+                        <button className={tipo === 'humano' ? 'btn-ativo' : ''} onClick={() => setTipo('humano')}>Humano</button>
+                        <button className={tipo === 'robo' ? 'btn-ativo' : ''} onClick={() => setTipo('robo')}>Robô</button>
+                    </div>
                 </div>
                 <div className='sw-lista'>
                     {/* A partir da variável "filtrado" definida por useState, 
@@ -81,7 +94,7 @@ export default function StarWars() {
                     Tenho a opção também de passar o nome das propriedades com maior declaração como na parte comentada.
                     */}
                     {filtrado.map(person => {
-                        return <CardSW value={person}/>
+                        return <CardSW key={person.id} value={person} />
                     })}
 
                     {/* Se testar este modo, será necessário atualizar o componente chamado para receber nome e imagem */}
