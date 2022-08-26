@@ -13,9 +13,16 @@ export default function Home() {
     console.log(`Variável "text" foi modificada`)
   }, [text])
 
+  useEffect(() => {
+    console.log('Componente sendo montado.')
+    return () => {
+      console.log('Componente sendo desmontado.')
+    }
+  })
+
   return (
     <div style={{
-      'display': 'flex', 'flexDirection': 'column', 'max-width': '240px', 'padding': '20px'
+      'display': 'flex', 'flexDirection': 'column', 'maxWidth': '240px', 'padding': '20px'
     }}>
       <span style={{ 'marginBottom': '10px' }}><b>Texto digitado: </b>{text}</span>
       {/* Para o input, declaro o valor inicial dele como o valor inicial da variável text e a cada atualização do input (onChange) chamo o método setText e passo o valor digitado pelo usuário. */}
