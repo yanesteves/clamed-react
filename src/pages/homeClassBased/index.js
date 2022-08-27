@@ -1,7 +1,7 @@
 import { Component } from 'react';
 
 // Modelo baseado em Classe
-export default class Home extends Component {
+export default class HomeClassBased extends Component {
     
   constructor(props) {
     super(props);

@@ -12,14 +12,14 @@ export default function Cronometro() {
         }, 1000);
     }
 
-    function pararContagem() {
+    function pausarContagem() {
         clearInterval(meuContadorId.current)
     }
     return (
         <div style={{'display': 'block', 'width': '240px','margin': '0 auto', 'textAlign': 'center', 'transform': 'scale(2) translateY(50%)'}}>
             <h2>{timer}</h2>
             <button onClick={iniciarContagem}>Iniciar</button>
-            <button onClick={pararContagem}>Parar</button>
+            <button onClick={pausarContagem}>Pausar</button>
         </div>
     );
 }
