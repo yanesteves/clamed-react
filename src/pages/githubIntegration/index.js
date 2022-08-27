@@ -12,7 +12,9 @@ export default function GithubIntegration() {
         .then(users => {
           console.log('- recebeu a resposta -')
           console.log(users)
-          setUsers(users.items)        
+          if (users?.items) {
+            setUsers(users.items)        
+          }          
         })
     }, [termo])
     return (
