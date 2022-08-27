@@ -1,0 +1,30 @@
+.github-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.github-card img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.d-block {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: space-around;    
+}
+
+.name-user {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.text-muted {
+    font-size: 14px;
+    font-weight: 400;
+    color: #939292;
+    margin-top: -10px;
+}
