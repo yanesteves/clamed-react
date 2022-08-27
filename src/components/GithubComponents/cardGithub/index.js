@@ -8,7 +8,7 @@ export default function CardGithub({ value }) {
                 
             </div>
 
-            <div className='d-block'>
+            <div className='github-user-info'>
                 <span className='name-user'>@{value.login}</span>
                 <span className='nickuser text-muted'>{value.url}</span>
             </div>

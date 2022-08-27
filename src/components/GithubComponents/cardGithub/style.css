@@ -9,7 +9,7 @@
     margin-right: 20px;
 }
 
-.d-block {
+.github-user-info {
     display: flex;
     flex-direction: column;
     height: 60px;
