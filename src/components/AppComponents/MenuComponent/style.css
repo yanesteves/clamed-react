@@ -1,0 +1,26 @@
+.text-muted {
+    color: #f0f0f0;
+}
+
+.route-definition {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.route-definition::after {
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 1.75px;
+    border-radius: 2px;
+    background-color: #8a8a8a;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -25px;
+}
+
+.route-definition a {
+    color: #61dafb;
+    margin-top: 10px;
+}
