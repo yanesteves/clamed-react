@@ -1,8 +1,0 @@
-.div-focus {
-    display: flex;
-    flex-direction: column;
-    width: 240px;
-    margin: 0 auto;
-    text-align: center;
-    transform: scale(1.5) translateY(50%);
-}
