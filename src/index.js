@@ -1,23 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// import App from './App';
+import RoutesDeclaration from './routes/routes';
 import './index.css';
-// Páginas disponíveis para carregar no react
-import App from './App';
-import Home from './pages/home';
-import StarWars from './pages/starWars';
-import NFTStore from './pages/nftStore';
-import Case1 from './pages/case1';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* Descomente/Comente o componente (página) que você deseja visualizar/ocultar */}
     {/* <App /> */}
-    {/* <Home /> */}
-    {/* <StarWars /> */}
-    {/* <Case1 /> */}
-     <NFTStore />    
+    <RoutesDeclaration />
   </React.StrictMode>
 );
 
