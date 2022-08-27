@@ -64,7 +64,7 @@ h4 > span {
     margin: 0 20px;
 }
 
-.btn-active {
+.tipo-personagem button.btn-active {
     font-weight: 600;
     color: rgb(254, 212, 46) !important;
 }

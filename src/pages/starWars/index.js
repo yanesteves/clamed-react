@@ -59,6 +59,7 @@ export default function StarWars() {
     // useEffect com uma condição de execução, neste caso será executado sempre que existir uma mudança na variável "termo"
     // Se houver a mudança, será chamado o método setFiltro com a resposta da busca de itens que condizem com o valor digitado pelo usuário    
     useEffect(() => {
+
         setFiltro(
             // É aplicado um filter para retornar os dados condizentes e utilizo toLocaleLowerCase para garantir os dois nomes em minusculo.
             // o indexOf retorna -1 caso o termo não esteja presente no nome do personagem.            
@@ -82,8 +83,8 @@ export default function StarWars() {
                     <input value={termo} onChange={(e) => setTermo(e.target.value)} placeholder='Digite o nome do personagem a ser buscado...'></input>
                     <div className='tipo-personagem'>
                         {/* Aplico uma classe dinamica para atualizar a cor do botão. */}
-                        <button className={tipo === 'humano' ? 'btn-ativo' : ''} onClick={() => setTipo('humano')}>Humano</button>
-                        <button className={tipo === 'robo' ? 'btn-ativo' : ''} onClick={() => setTipo('robo')}>Robô</button>
+                        <button className={tipo === 'humano' ? 'btn-active' : ''} onClick={() => setTipo('humano')}>Humano</button>
+                        <button className={tipo === 'robo' ? 'btn-active' : ''} onClick={() => setTipo('robo')}>Robô</button>
                     </div>
                 </div>
                 <div className='sw-lista'>
