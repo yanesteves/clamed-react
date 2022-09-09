@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/clamed-react/static/css/main.9d8a7157.css",
-    "main.js": "/clamed-react/static/js/main.b3c662d0.js",
+    "main.css": "/clamed-react/static/css/main.ced0bd0b.css",
+    "main.js": "/clamed-react/static/js/main.00282162.js",
     "static/js/787.69eed086.chunk.js": "/clamed-react/static/js/787.69eed086.chunk.js",
     "static/media/logo.svg": "/clamed-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/clamed-react/index.html",
-    "main.9d8a7157.css.map": "/clamed-react/static/css/main.9d8a7157.css.map",
-    "main.b3c662d0.js.map": "/clamed-react/static/js/main.b3c662d0.js.map",
+    "main.ced0bd0b.css.map": "/clamed-react/static/css/main.ced0bd0b.css.map",
+    "main.00282162.js.map": "/clamed-react/static/js/main.00282162.js.map",
     "787.69eed086.chunk.js.map": "/clamed-react/static/js/787.69eed086.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d8a7157.css",
-    "static/js/main.b3c662d0.js"
+    "static/css/main.ced0bd0b.css",
+    "static/js/main.00282162.js"
   ]
 }
